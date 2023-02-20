@@ -11,10 +11,11 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+  let res = []
+  array.map(num => parseInt(num) === num ? res.push(num) : '')
+  return res
 }
 
 // No modifiques nada debajo de esta linea //
-
 
 module.exports = soloNumeros
